@@ -1,0 +1,16 @@
+<header div class="topo">
+    <style>
+        .topo{
+            color:black;
+            background-color: rgba(76, 76, 228, 0.747);
+            border: solid rgb(78, 76, 228, 0.747);
+            font-style: italic;
+        }
+    </style>
+    <h2 align="center">Livraria Leitor Assíduo</h2>
+    <button type='button' (click)='exibirCadastro()'>Adicionar usuário</button><br>
+</header>
+<body>
+    <novo-usuario [hidden]="!exibeCadastro"> </novo-usuario>
+    <lista-usuarios> </lista-usuarios>>
+</body>

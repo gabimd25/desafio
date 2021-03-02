@@ -1,0 +1,33 @@
+<table id class="tabela">
+    <style>
+       .tabela{
+            padding: 2%;
+        } 
+    </style>
+    
+    <thead align="center">
+        <th width=15%>Nome</th>
+        <th width=15%>Email</th>
+        <th width=5%>Telefone</th>
+        <th width=5%>Idade</th>
+        <th width=5%>Sexo</th>
+        <th width=15%>Endereço</th>
+        <th width=20%>Preferências</th>
+    </thead>
+    <tbody align="center">
+        <style>
+            
+        </style>
+        <!--  <tr bgcolor="verificaCor(usuario)"</tr> *ngFor = "let usuario of usuarioService.usuarios">-->
+        <tr *ngFor = "let usuario of usuarioService.usuarios">
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.email}}</td>
+            <td>{{usuario.telefone}}</td>
+            <td>{{usuario.idade}}</td>
+            <td>{{usuario.sexo}}</td>
+            <td>{{usuario.endereco}}</td>
+            <td>{{usuario.preferencias}}</td>
+        </tr>
+    </tbody>
+</table>
+

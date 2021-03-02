@@ -1,0 +1,25 @@
+<label>Nome</label>
+<input type="text" [(ngModel)]="nome">
+<label>Telefone</label>
+<input type="text" [(ngModel)]="telefone"><br>
+<label>Idade</label>
+<input type='number' name='idade-usuario' [(ngModel)]="idade">
+<label>Sexo</label>
+<input type="text" [(ngModel)]="sexo"><br>
+<label>Email</label>
+<input type='email' [(ngModel)]="email"><br>
+<label>Endereço</label>
+<input type="text" [(ngModel)]="endereco"><br>
+<label>Preferências </label><br>
+<input type="checkbox" [(ngModel)]="infantil" >Infantil
+<input type="checkbox" [(ngModel)]="infantoJuvenil" >Infanto-Juvenil<br>
+<input type="checkbox" [(ngModel)]="romance" >Romance
+ <input type="checkbox" [(ngModel)]="suspense" >Suspense e Terror<br>
+ <input type="checkbox" [(ngModel)]="ficcao" >Ficcção
+ <input type="checkbox" [(ngModel)]="biografias" >Biografias<br>
+<input type="checkbox" [(ngModel)]="saude">Saúde
+<input type="checkbox" [(ngModel)]="poesias" >Poesias<br>
+<input type="checkbox" [(ngModel)]="literaturaBrasil" >Literatura Brasileira
+<input type="checkbox" [(ngModel)]="literaturaEstrangeira" >Literatura Estrangeira<br>
+ 
+<button [disabled]="idadeValidacao()==false" (click)="addUsuario()"> Adicionar </button>
